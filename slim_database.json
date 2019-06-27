@@ -1,0 +1,77 @@
+{
+    "datas": [
+        {
+            "_id": 1,
+            "name": "Student 1",
+            "last_name": "Last_Name 1",
+            "class": "Class 1",
+            "section": "A",
+            "fees": {
+                "total": 100000,
+                "received": 0
+            },
+            "result": "Pass"
+        },
+        {
+            "_id": 2,
+            "name": "Student 2",
+            "last_name": "Last_Name 2",
+            "class": "Class 1",
+            "section": "A",
+            "fees": {
+                "total": 100000,
+                "received": 50000
+            },
+            "result": "Pass"
+        },
+        {
+            "_id": 3,
+            "name": "Student 3",
+            "last_name": "Last_Name 3",
+            "class": "Class 1",
+            "section": "A",
+            "fees": {
+                "total": 100000,
+                "received": 60000
+            },
+            "result": "Pass"
+        },
+        {
+            "_id": 4,
+            "name": "Student 4",
+            "last_name": "Last_Name 4",
+            "class": "Class 2",
+            "section": "A",
+            "fees": {
+                "total": 100000,
+                "received": 60000
+            },
+            "result": "Pass"
+        },
+        {
+            "_id": 5,
+            "name": "Student 5",
+            "last_name": "Last_Name 5",
+            "class": "Class 2",
+            "section": "A",
+            "fees": {
+                "total": 100000,
+                "received": 29000
+            },
+            "result": "Fail"
+        },
+        {
+            "_id": 6,
+            "name": "Student 6",
+            "last_name": "Last_Name 6",
+            "class": "Class 2",
+            "section": "A",
+            "fees": {
+                "total": 100000,
+                "received": 29000
+            },
+            "result": "Fail"
+        }
+    ],
+    "status": true
+}
