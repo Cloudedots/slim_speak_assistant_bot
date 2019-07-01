@@ -52,15 +52,17 @@ def hello_answer(ask):
     if 'exit' in ask:
         raise SystemExit
 
-    elif 'hcall_helloow are you' in ask:
+    elif 'how are you' in ask:
         message = "I am great."
         print(f"Hello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
 
     elif 'what is 10 + 10' in ask:
         message = "It is 20."
         print(f"Hello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
 
     elif 'what is the total fees paid in this year' in ask or 'total fees collection' in ask:
         searching_message = "I am doing calculation"
@@ -77,6 +79,7 @@ def hello_answer(ask):
         message = f"It is {total_received}"
         print(f"\nHello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
 
     elif 'what is the total fees due for this year' in ask or "total fees due" in ask:
         searching_message = "I am doing calculation"
@@ -95,6 +98,7 @@ def hello_answer(ask):
         message = f"It is {total_due}"
         print(f"\nHello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
 
     elif 'how many students do we have in total' in ask or "total students" in ask:
         searching_message = "I am doing calculation"
@@ -111,6 +115,7 @@ def hello_answer(ask):
         message = f"It is {total_students}"
         print(f"\nHello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
 
     elif 'what is the percentage of students who have passed this year' in ask or "total passed percentage" in ask:
         searching_message = "I am doing calculation"
@@ -130,6 +135,7 @@ def hello_answer(ask):
         message = f"It is {percentage:.2f}%"
         print(f"\nHello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
 
     elif 'what is the percentage of students who have failed this year' in ask or "total failed percentage" in ask:
         searching_message = "I am doing calculation"
@@ -149,22 +155,13 @@ def hello_answer(ask):
         message = f"It is {percentage:.2f}%"
         print(f"\nHello: {message}")
         speak.text(message)
+        print("Say 'hello' now")
     else:
         message = "I did't get you. Can you repeat it again, please?"
         speak.text(message)
         print("Speack now.")
         asked = ask_hello()
         hello_answer(asked)
-
-
-def main():
-    try:
-        call_hello()
-        asked = ask_hello()
-        hello_answer(str(asked).lower())
-    except:
-        print("There was problem. Please re-run program again.")
-        raise SystemExit
 
 
 print("Connecting to the SLIM database...")
@@ -175,12 +172,13 @@ print(f"Hello: {welcome_message}")
 speak.text(welcome_message)
 print(f"Hello: {ask_me}")
 speak.text(ask_me)
+print("Say 'hello' now")
 
-main()
-
-# while True:
-#     try:
-
-#     except:
-#         print("There was problem. Please re-run program again.")
-#         raise SystemExit
+while True:
+    try:
+        call_hello()
+        asked = ask_hello()
+        hello_answer(str(asked).lower())
+    except:
+        print("There was problem. Please re-run program again.")
+        raise SystemExit
